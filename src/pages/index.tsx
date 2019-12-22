@@ -1,7 +1,11 @@
-const Index = () => (
-  <div>
-    <p>Thank u, next</p>
-  </div>
-);
+import React from 'react';
+
+
+const Index: React.FC = () => {
+  return (
+    <div>Hello world!</div>
+  );
+}
+
 
 export default Index;
