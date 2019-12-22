@@ -21,6 +21,7 @@ boilerplate for next.js w/ TypeScript
     "typescript": "^3.7.4"
   }
 }
+```
 
 ### Use this template
 * Click the button of `Use this template`
