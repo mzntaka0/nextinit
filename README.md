@@ -58,7 +58,7 @@ yarn install
 |layouts|templates|Container|This represents a layout of the page. This is included in each page block.|
 |pages|pages|Container|This represents a instance of each layouts, possibly fetching some data from outside(API server or local store)
 
-I would like to use `parts` rather than `atoms` to include a nuance of both atoms and molecules, but I accepted to use that because of the order of directory from smaller to bigger concepts.
+I would like to use `parts` rather than `atoms` to include a nuance of both atoms and molecules, but I accepted to use that because of the order issue of directory from smaller to bigger concepts.
 
 #### The structure of directory
 ```ts
