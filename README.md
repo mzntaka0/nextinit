@@ -67,14 +67,21 @@ yarn install
 src
 ├ components/
 | ├ atoms/
-| └ blocks/
+| ├ blocks/
+| └ _pages/
+|     ├ index/
+|     | ├ index.tsx
+|     | └ lib/
+|     |   ├ fetch.tsx
+|     |   └ layout.tsx
+|     ├ about/
+|     | ├ index.tsx
+|     | └ lib/
+|     |   ├ fetch.tsx
+|         └ layout.tsx
 ├ pages/
-| ├ index/
-| | ├ index.tsx
-| | └ layout.tsx
-| ├ about/
-| | ├ index.tsx
-| | └ layout.tsx
+| ├ index.tsx
+| ├ about.tsx
 | .
 . .
 . .
