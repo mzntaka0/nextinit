@@ -12,7 +12,7 @@
     "removeComments": false,
     "noEmit": true,
     "strict": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "noUnusedParameters": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,

@@ -1,4 +1,5 @@
 import React from 'react'
+import {NextComponentType} from 'next'
 
 
 const SiteLayout: React.FC = ({ children }) => (
@@ -6,6 +7,6 @@ const SiteLayout: React.FC = ({ children }) => (
 )
 
 
-export const getLayout: React.FC = page => <SiteLayout>{page}</SiteLayout>
+export const getLayout = (page: React.ReactNode) => <SiteLayout>{page}</SiteLayout>
 
 export default SiteLayout

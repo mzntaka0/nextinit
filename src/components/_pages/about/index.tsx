@@ -4,7 +4,7 @@ import {getLayout} from './lib/layout'
 
 const Page = () => {
   return (
-    <div>Hello world!</div>
+    <div>about</div>
   );
 }
 
