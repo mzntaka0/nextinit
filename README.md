@@ -44,8 +44,15 @@ yarn install
 * based on Atomic Design
 * based on Presentational and Container
 
-|category|Atomic Design|P/C|description|
-|-----|-----|-----|
+#### The issues of Atomic Design or Presentational/Container
+* The names of each categories might not be so intuitive
+* Too many categories
+* Although both templates and pages have a same directory structure, these are like duplicated.
+* The catogrizations, Presentational and Container, are more like an abstract concepts that shouldn't be represented as a directory.
+
+#### Proposal for a new categorizations of components.
+|New Category|Atomic Design|P/C|description|
+-----|-----|-----|-----
 |atoms|atoms, molecules|Presentational|Only having local state that doesn't rely on anything|
 |blocks|organizations|Presentational or Container|hoge|
 |layout|templates|Container|hoge|
