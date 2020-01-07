@@ -38,3 +38,34 @@ git clone https://github.com/mzntaka0/nextinit.git ${project_name}
 cd ${project_name}
 yarn install
 ```
+
+
+### The policy of component categorization
+* based on Atomic Design
+* based on Presentational and Container
+
+|category|Atomic Design|P/C|description|
+|-----|-----|-----|
+|atoms|atoms, molecules|Presentational|Only having local state that doesn't rely on anything|
+|blocks|organizations|Presentational or Container|hoge|
+|layout|templates|Container|hoge|
+
+
+
+```ts
+src
+├ components
+| ├ atoms
+| └ blocks
+├ pages
+| ├ index
+| | ├ index.tsx
+| | └ layout.tsx
+| ├ about
+| | ├ index.tsx
+| | └ layout.tsx
+| .
+. .
+. .
+.
+```
