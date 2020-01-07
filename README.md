@@ -60,17 +60,17 @@ yarn install
 
 I would like to use `parts` rather than `atoms` to include a nuance of both atoms and molecules, but I accepted to use that because of the order of directory from smaller to bigger concepts.
 
-
+#### The structure of directory
 ```ts
 src
-├ components
-| ├ atoms
-| └ blocks
-├ pages
-| ├ index
+├ components/
+| ├ atoms/
+| └ blocks/
+├ pages/
+| ├ index/
 | | ├ index.tsx
 | | └ layout.tsx
-| ├ about
+| ├ about/
 | | ├ index.tsx
 | | └ layout.tsx
 | .
