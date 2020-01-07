@@ -23,7 +23,7 @@ boilerplate for next.js w/ TypeScript
 }
 ```
 
-### Use this template
+### How to use this template
 * Click the button of `Use this template`
 
 or 
@@ -53,22 +53,24 @@ yarn install
 #### Proposal for a new categorizations of components.
 |New Category|Atomic Design|P/C|description|
 -----|-----|-----|-----
-|atoms|atoms, molecules|Presentational|Only having local state that doesn't rely on anything|
-|blocks|organizations|Presentational or Container|hoge|
-|layout|templates|Container|hoge|
+|atoms|atoms, molecules|Presentational|Ths represents a minimum part of component, only having local state that doesn't rely on anything|
+|blocks|organizations|Presentational or Container|This represents a block of components, which could be Header, Footer, Contents, etc.|
+|layouts|templates|Container|This represents a layout of the page. This is included in each page block.|
+|pages|pages|Container|This represents a instance of each layouts, possibly fetching some data from outside(API server or local store)
 
+I would like to use `parts` rather than `atoms` to include a nuance of both atoms and molecules, but I accepted to use that because of the order issue of directory from smaller to bigger concepts.
 
-
+#### The structure of directory
 ```ts
 src
-├ components
-| ├ atoms
-| └ blocks
-├ pages
-| ├ index
+├ components/
+| ├ atoms/
+| └ blocks/
+├ pages/
+| ├ index/
 | | ├ index.tsx
 | | └ layout.tsx
-| ├ about
+| ├ about/
 | | ├ index.tsx
 | | └ layout.tsx
 | .
