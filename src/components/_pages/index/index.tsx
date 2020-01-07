@@ -2,7 +2,7 @@ import React from 'react';
 import {NextPage} from 'next'
 
 
-const Index: NextPage = () => {
+const Page: NextPage = () => {
   return (
     <div>Hello world!</div>
   );
@@ -10,4 +10,4 @@ const Index: NextPage = () => {
 
 
 
-export default Index;
+export default Page;
