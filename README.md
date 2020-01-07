@@ -60,6 +60,7 @@ yarn install
 
 * I would like to use `parts` rather than `atoms` to include a nuance of both atoms and molecules, but I accepted to use that because of the order issue of directory from smaller to bigger concepts.
 * layouts would like to be created by the idea inspirated by this article (https://adamwathan.me/2019/10/17/persistent-layout-patterns-in-nextjs/) (Bonus: Add a `getLayout` function to your layout components)
+* to avoid prerendering of non-page files for each particular pages, took an idea of creating \_page directory in components(https://github.com/zeit/next.js/issues/3728#issuecomment-363964953). pages directory only call each index file from \_pages
 
 #### The structure of directory
 ```ts
