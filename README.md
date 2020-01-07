@@ -23,7 +23,7 @@ boilerplate for next.js w/ TypeScript
 }
 ```
 
-### Use this template
+### How to use this template
 * Click the button of `Use this template`
 
 or 
