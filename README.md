@@ -53,9 +53,10 @@ yarn install
 #### Proposal for a new categorizations of components.
 |New Category|Atomic Design|P/C|description|
 -----|-----|-----|-----
-|atoms|atoms, molecules|Presentational|Only having local state that doesn't rely on anything|
-|blocks|organizations|Presentational or Container|hoge|
-|layout|templates|Container|hoge|
+|atoms|atoms, molecules|Presentational|Ths represents a minimum part of component, only having local state that doesn't rely on anything|
+|blocks|organizations|Presentational or Container|This represents a block of components, which could be Header, Footer, Contents, etc.|
+|layouts|templates|Container|This represents a layout of the page. This is included in each page block.|
+|pages|pages|Container|This represents the instance of each layouts, fetching some data from outside(API server or local store)
 
 
 
