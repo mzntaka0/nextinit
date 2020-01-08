@@ -1,5 +1,7 @@
-const fetch = () => {
+import fetch from 'unfetch'
+
+const fetcher = () => {
 }
 
 
-export default fetch
+export default fetcher

@@ -1,9 +1,10 @@
-import Page from '../components/_pages/index'
-//// this process should be automated
+//import dynamic from 'next/dynamic'
 //import * as path from 'path'
-//const scriptName = path.basename(__filename, '.tsx')
-//import(`../components/_pages/${scriptName}`).then((module) => {
-//  let Page = module.Page
-//})
+import Page from '../components/_pages/index'
+
+// this might be more abstracted by using useRouter or withRouter from 'next/router'
+//const pageName: string = path.basename(__filename, path.extname(__filename))
+//const Page = dynamic(() => import(`../components/_pages/${pageName}`))
+
 
 export default Page

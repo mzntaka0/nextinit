@@ -3,10 +3,12 @@ import {NextPage} from 'next'
 import App from 'next/app'
 
 
-type ExtendedNextPage = NextPage & {getLayout?(page: React.ReactNode): any}
+//type ExtendedNextPage = NextPage & {getLayout?(page: React.ReactNode): any}
 
+type ExtendedNextPage<P> = NextPage<P> & (NextPage<P> & {getLayout?(page: React.ReactNode): any})
+type Props = {}
 
-class MyApp extends App<{Component: ExtendedNextPage, pageProps: any, router: any }> {
+class MyApp extends App<{Component: ExtendedNextPage<Props>, pageProps: any, router: any }> {
   render() {
     const { Component, pageProps, router } = this.props
 
