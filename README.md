@@ -79,8 +79,9 @@ yarn install
 ```ts
 src
 ├ components/
-| ├ atoms/
-| ├ blocks/
+| ├ _atoms/
+| ├ objects/
+| ├ sections/
 | └ _pages/
 |     ├ index/
 |     | ├ index.tsx
