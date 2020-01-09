@@ -5,11 +5,11 @@ import {NextComponentType} from 'next'
 import {getLayout as getSiteLayout} from '../../index/lib/layout'
 
 // The definition of the layout of about page
-const AboutLayout = ({ children }) => (
+const AboutLayout: React.FC = ({ children }) => (
   <div>{children}</div>
 )
 
 
-export const getLayout = page => getSiteLayout(<AboutLayout>{page}</AboutLayout>)
+export const getLayout: React.FC = (page: React.ReactNode) => getSiteLayout(<AboutLayout>{page}</AboutLayout>)
 
 export default AboutLayout

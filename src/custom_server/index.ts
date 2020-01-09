@@ -2,14 +2,14 @@ import * as express from 'express'
 import * as next from 'next'
 import * as proxy from 'http-proxy-middleware'
 import * as cors from 'cors'
-impot * as helmet from 'helmet'
+import * as helmet from 'helmet'
 //import {Request, Response, NextFunction}
-import {IncomingMessage, SererResponse} from 'http'
+import {IncomingMessage, ServerResponse} from 'http'
 
 
-const dev = process.env.NODE_ENV = !== 'production'
+const dev = process.env.NODE_ENV !== 'production'
 const API_URL = process.env.API_URL || 'http://localhost:3002'
-const PORT = process.env.PORT = 8000
+const PORT = process.env.PORT || 8000
 
 
 const app = next({dir: '.', dev})
@@ -32,7 +32,7 @@ const main = async () => {
   server.use(helmet())
   server.use(cors())
 
-  server.get('*', (req: IncomingMessage, res: SererResponse) => {
+  server.get('*', (req: IncomingMessage, res: ServerResponse) => {
     return handle(req, res)
   })
 

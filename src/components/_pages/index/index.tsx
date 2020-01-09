@@ -1,6 +1,8 @@
 import React from 'react'
 import {NextPage} from 'next'
+
 import {getLayout} from './lib/layout'
+import Button from '../../_atoms/Button'
 
 
 type ExtendedNextPage<P> = NextPage<P> & (NextPage<P> & {getLayout?(page: React.ReactNode): any})
@@ -11,7 +13,12 @@ type Props = {
 
 const Page: ExtendedNextPage<Props> = ({userAgent}) => {
   return (
-    <div>Hello world! user agent: {userAgent}</div>
+    <div>
+      <p>
+        Hello world! user agent: {userAgent}
+      </p>
+      <Button buttonText="Hello World!" />
+    </div>
   );
 }
 

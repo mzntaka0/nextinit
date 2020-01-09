@@ -35,7 +35,7 @@ Page.getInitialProps = async () => {
   const query = `
   {
     users {
-      name
+      firstName,
     }
   }
   `

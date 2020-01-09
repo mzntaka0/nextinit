@@ -1,12 +1,13 @@
 {
   "name": "nextinit",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./src/custom_server/index.ts",
   "license": "MIT",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "storybook": "start-storybook -p 6006 -c .storybook"
   },
   "dependencies": {
     "@types/next": "^9.0.0",
@@ -29,7 +30,14 @@
     "unfetch": "^4.1.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@storybook/addon-info": "^5.2.8",
+    "@storybook/react": "^5.2.8",
     "@types/node": "^12.12.21",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.6",
+    "babel-preset-react-app": "^9.1.0",
+    "react-docgen-typescript-loader": "^3.6.0",
     "ts-node": "^8.5.4",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.7.4"

@@ -13,6 +13,7 @@ require("dotenv").config();
 
 const path = require("path");
 const Dotenv = require("dotenv-webpack");
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 
 module.exports = {
   webpack: config => {
