@@ -68,7 +68,7 @@ yarn install
 |blocks|organizations|Presentational or Container|This represents a block of components, which could be Header, Footer, Contents, etc.|
 |layouts|templates|Container|This represents a layout of the page. This is included in each page block.|
 |\_pages|pages|Container|This represents a instance of each layouts, possibly fetching some data from outside(API server or local store)|
-|pages|pages|Container|This is just a instance of \_pages(each \_pages/${page}/index.tsx would be just imported and exported|
+|pages|pages|Container|This is just a instance of \_pages(each \_pages/${page}/index.tsx would be just imported and exported. See here: https://github.com/mzntaka0/nextinit/blob/develop/src/pages/index.tsx |
 
 * I would like to use `parts` rather than `atoms` to include a nuance of both atoms and molecules, but I accepted to use that because of the order issue of directory from smaller to bigger concepts.
 * layouts would like to be created by the idea inspirated by this article (https://adamwathan.me/2019/10/17/persistent-layout-patterns-in-nextjs/) (Bonus: Add a `getLayout` function to your layout components)
