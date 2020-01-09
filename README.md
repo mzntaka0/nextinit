@@ -110,3 +110,4 @@ This file is gonna be called in index file of each page and re-called in _app.ts
 - [ ] Consider that components/\_pages/${page}/lib directory is needed or not. -> extract them to each page's root directory?
 - [ ] Refactor resolver of GraphQL Server
 - [ ] Auto creating pages files according to components/\_pages/
+- [ ] Reflect awesome codes of this page: https://github.com/zeit/next.js/tree/canary/examples/with-typescript-graphql
