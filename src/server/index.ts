@@ -1,6 +1,8 @@
 import * as express from 'express'
 import * as next from 'next'
 import * as proxy from 'http-proxy-middleware'
+import * as cors from 'cors'
+impot * as helmet from 'helmet'
 //import {Request, Response, NextFunction}
 import {IncomingMessage, SererResponse} from 'http'
 
@@ -20,13 +22,15 @@ const main = async () => {
   const server = express()
 
 
-  const options = {
-    targert: '/api',
-    changeOrigin: false,
-    ws: false  // proxy websockets
-  }
+  //const options = {
+  //  targert: '/api',
+  //  changeOrigin: false,
+  //  ws: false  // proxy websockets
+  //}
 
   //server.use('/api', proxy(options)
+  server.use(helmet())
+  server.use(cors())
 
   server.get('*', (req: IncomingMessage, res: SererResponse) => {
     return handle(req, res)
