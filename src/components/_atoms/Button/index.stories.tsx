@@ -4,6 +4,8 @@ import {storiesOf} from '@storybook/react'
 import Button from './index'
 
 
-storiesOf('Button', module)
+const stories = storiesOf('Button', module)
+
+stories
   .add('With text', () => <Button buttonText="Hello World!" />)
   .add('With text2', () => <Button buttonText="yay!" />)
