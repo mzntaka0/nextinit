@@ -67,7 +67,8 @@ yarn install
 |atoms|atoms, molecules|Presentational|This represents a minimum part of component, only having local state that doesn't rely on anything|
 |blocks|organizations|Presentational or Container|This represents a block of components, which could be Header, Footer, Contents, etc.|
 |layouts|templates|Container|This represents a layout of the page. This is included in each page block.|
-|pages|pages|Container|This represents a instance of each layouts, possibly fetching some data from outside(API server or local store)
+|\_pages|pages|Container|This represents a instance of each layouts, possibly fetching some data from outside(API server or local store)|
+|pages|pages|Container|This is just a instance of \_pages(each \_pages/${page}/index.tsx would be just imported and exported|
 
 * I would like to use `parts` rather than `atoms` to include a nuance of both atoms and molecules, but I accepted to use that because of the order issue of directory from smaller to bigger concepts.
 * layouts would like to be created by the idea inspirated by this article (https://adamwathan.me/2019/10/17/persistent-layout-patterns-in-nextjs/) (Bonus: Add a `getLayout` function to your layout components)
@@ -108,3 +109,4 @@ This file is gonna be called in index file of each page and re-called in _app.ts
 - [ ] Refactor a data fetching code based on Clean Architecture 
 - [ ] Consider that components/\_pages/${page}/lib directory is needed or not. -> extract them to each page's root directory?
 - [ ] Refactor resolver of GraphQL Server
+- [ ] Auto creating pages files according to components/\_pages/
