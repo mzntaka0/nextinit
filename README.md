@@ -112,3 +112,4 @@ This file is gonna be called in index file of each page and re-called in _app.ts
 - [ ] Refactor resolver of GraphQL Server
 - [ ] Auto creating pages files according to components/\_pages/
 - [ ] Reflect awesome codes of this page: https://github.com/zeit/next.js/tree/canary/examples/with-typescript-graphql
+- [ ] Is the new proposed directory structure really good?
