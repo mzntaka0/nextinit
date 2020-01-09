@@ -8,16 +8,27 @@ boilerplate for next.js w/ TypeScript
   "dependencies": {
     "@types/next": "^9.0.0",
     "@types/react": "^16.9.17",
+    "apollo-server-micro": "^2.9.15",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "dotenv-webpack": "^1.7.0",
     "express": "^4.17.1",
+    "graphql": "^14.5.8",
+    "graphql-request": "^1.8.2",
+    "helmet": "^3.21.2",
+    "http-proxy-middleware": "^0.20.0",
+    "isomorphic-fetch": "^2.2.1",
     "next": "^9.1.6",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "styled-components": "^4.4.1"
+    "styled-components": "^4.4.1",
+    "swr": "^0.1.16",
+    "unfetch": "^4.1.0"
   },
   "devDependencies": {
     "@types/node": "^12.12.21",
+    "ts-node": "^8.5.4",
+    "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.7.4"
   }
 }
@@ -87,3 +98,13 @@ src
 . .
 .
 ```
+
+### Where to write a layout code
+Write here: `components/_pages/${page}/lib/layout.tsx`
+This file is gonna be called in index file of each page and re-called in _app.tsx
+
+
+### TODO
+- [ ] Refactor a data fetching code based on Clean Architecture 
+- [ ] Consider that components/\_pages/${page}/lib directory is needed or not. -> extract them to each page's root directory?
+- [ ] Refactor resolver of GraphQL Server
