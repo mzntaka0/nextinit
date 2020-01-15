@@ -17,7 +17,7 @@ const Page: ExtendedNextPage<Props> = ({userAgent}) => {
       <p>
         Hello world! user agent: {userAgent}
       </p>
-      <Button buttonText="Hello World!" />
+      <Button />
     </div>
   );
 }
