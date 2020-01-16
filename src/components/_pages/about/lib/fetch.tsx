@@ -1,6 +1,21 @@
-import fetch from 'unfetch'
+import { request } from 'graphql-request'
 
-const fetcher = () => {
+
+export const URL = 'http://localhost:3002/api/graphql'
+
+// TODO: make query more flexible. Is the module just for query needed?
+export const query = `
+  {
+    users {
+      firstName,
+    }
+  }
+  `
+
+
+const fetcher = async (query) => {
+  const res = await request(URL, query)
+  return JSON.stringify(res)
 }
 
 
