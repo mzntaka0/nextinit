@@ -13,6 +13,8 @@
     "@types/next": "^9.0.0",
     "@types/react": "^16.9.17",
     "apollo-server-micro": "^2.9.15",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "dotenv-webpack": "^1.7.0",

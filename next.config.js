@@ -16,6 +16,10 @@ const Dotenv = require("dotenv-webpack");
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 
 module.exports = {
+  poweredByHeader: false,
+};
+
+module.exports = {
   webpack: config => {
     config.plugins = config.plugins || [];
 
