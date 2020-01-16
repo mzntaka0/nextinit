@@ -1,11 +1,13 @@
-import * as express from 'express'
-import * as next from 'next'
+//import * as express from 'express'
+//import * as next from 'next'
 import * as proxy from 'http-proxy-middleware'
 import * as cors from 'cors'
 import * as helmet from 'helmet'
 //import {Request, Response, NextFunction}
 import {IncomingMessage, ServerResponse} from 'http'
 
+const next = require('next')
+const express = require('express')
 
 const dev = process.env.NODE_ENV !== 'production'
 const API_URL = process.env.API_URL || 'http://localhost:3002'
