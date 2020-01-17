@@ -47,7 +47,7 @@ yarn install
 #### Proposal for a new categorizations of components.
 |New Category|Atomic Design|P/C|description|
 -----|-----|-----|-----
-|\_atoms|atoms, molecules|Presentational|This represents a minimum part of component, only having local state that doesn't rely on anything. Atoms may only have `useState` not having `useReducer`|
+|\_atoms|atoms, molecules|Presentational|This represents a minimum part of component, only having local state that doesn't rely on anything. Atoms may only have `useState` not having `useReducer` to enclose states inside.|
 |objects|molecules|Presentational|This represents each "objects" concerned by the poinf of view from OOUI. Still only `useState`(?)|
 |sections|organism|Presentational or Container|This represents a block of components, which could be Header, Footer, Contents, etc. This size of components are gonna be a unit of redux management. Refer here: https://medium.com/@rajaraodv/a-guide-for-building-a-react-redux-crud-app-7fe0b8943d0f#.c4yhhvk0d or here: https://www.freecodecamp.org/news/the-best-way-to-architect-your-redux-app-ad9bd16c8e2d/ Sections would have `useReducer` to manage larger states.|
 |layouts|templates|Container|This represents a layout of the page probably combinating some blocks. Layouts should be included in each \_page directory.|
