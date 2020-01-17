@@ -15,7 +15,7 @@ or
 git clone https://github.com/mzntaka0/nextinit.git ${project_name}
 ```
 
-* If you wanna use Antdesign with this template, please switch branch to `feature/with_antd` for now.
+#### If you wanna use Antdesign with this template, please switch branch to `feature/with_antd` for now.
 ```
 git clone https://github.com/mzntaka0/nextinit.git -b feature/with_antd ${project_name}
 ```
