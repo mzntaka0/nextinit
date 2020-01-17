@@ -1,38 +1,9 @@
 # nextinit
-boilerplate for next.js w/ TypeScript
+A useful boilerplate for next.js w/ TypeScript, GraphQL or Antdesign
 
 ### Dependencies
-```
-{
-  ...,
-  "dependencies": {
-    "@types/next": "^9.0.0",
-    "@types/react": "^16.9.17",
-    "apollo-server-micro": "^2.9.15",
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "dotenv-webpack": "^1.7.0",
-    "express": "^4.17.1",
-    "graphql": "^14.5.8",
-    "graphql-request": "^1.8.2",
-    "helmet": "^3.21.2",
-    "http-proxy-middleware": "^0.20.0",
-    "isomorphic-fetch": "^2.2.1",
-    "next": "^9.1.6",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "styled-components": "^4.4.1",
-    "swr": "^0.1.16",
-    "unfetch": "^4.1.0"
-  },
-  "devDependencies": {
-    "@types/node": "^12.12.21",
-    "ts-node": "^8.5.4",
-    "ts-node-dev": "^1.0.0-pre.44",
-    "typescript": "^3.7.4"
-  }
-}
-```
+See "dependencies" values in package.json
+
 
 ### How to use this template
 * Click the button of `Use this template`
@@ -66,7 +37,7 @@ yarn install
 -----|-----|-----|-----
 |\_atoms|atoms, molecules|Presentational|This represents a minimum part of component, only having local state that doesn't rely on anything|
 |objects|molecules|Presentational|This represents each "objects" concerned by the poinf of view from OOUI.|
-|sections|organism|Presentational or Container|This represents a block of components, which could be Header, Footer, Contents, etc.|
+|sections|organism|Presentational or Container|This represents a block of components, which could be Header, Footer, Contents, etc. This size of components are gonna be a unit of redux management.|
 |layouts|templates|Container|This represents a layout of the page probably combinating some blocks. This is included in each \_page directory.|
 |\_pages|pages|Container|This represents a instance of each layouts, possibly fetching some data from outside(API server or local store)|
 |pages|pages|Container|This is just a instance of \_pages(each \_pages/${page}/index.tsx would be just imported and exported. See an example here: https://github.com/mzntaka0/nextinit/blob/develop/src/pages/index.tsx |
