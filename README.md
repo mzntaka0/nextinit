@@ -50,7 +50,7 @@ yarn install
 |\_atoms|atoms, molecules|Presentational|This represents a minimum part of component, only having local state that doesn't rely on anything|
 |objects|molecules|Presentational|This represents each "objects" concerned by the poinf of view from OOUI.|
 |sections|organism|Presentational or Container|This represents a block of components, which could be Header, Footer, Contents, etc. This size of components are gonna be a unit of redux management. Refer here: https://medium.com/@rajaraodv/a-guide-for-building-a-react-redux-crud-app-7fe0b8943d0f#.c4yhhvk0d or here: https://www.freecodecamp.org/news/the-best-way-to-architect-your-redux-app-ad9bd16c8e2d/|
-|layouts|templates|Container|This represents a layout of the page probably combinating some blocks. This is included in each \_page directory.|
+|layouts|templates|Container|This represents a layout of the page probably combinating some blocks. Layouts should be included in each \_page directory.|
 |\_pages|pages|Container|This represents a instance of each layouts, possibly fetching some data from outside(API server or local store)|
 |pages|pages|Container|This is just a instance of \_pages(each \_pages/${page}/index.tsx would be just imported and exported. See an example here: https://github.com/mzntaka0/nextinit/blob/develop/src/pages/index.tsx |
 
