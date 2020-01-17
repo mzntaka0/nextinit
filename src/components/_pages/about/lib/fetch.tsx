@@ -1,7 +1,7 @@
 import { request } from 'graphql-request'
 
 
-export const URL = 'http://localhost:3002/api/graphql'
+export const URL = 'http://localhost:3000/api/graphql'
 
 // TODO: make query more flexible. Is the module just for query needed?
 export const query = `

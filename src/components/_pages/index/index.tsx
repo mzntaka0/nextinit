@@ -1,5 +1,6 @@
 import React from 'react'
 import {NextPage} from 'next'
+import {Button as AntButton} from 'antd'
 
 import {getLayout} from './lib/layout'
 import Button from '../../_atoms/Button'
@@ -17,7 +18,8 @@ const Page: ExtendedNextPage<Props> = ({userAgent}) => {
       <p>
         Hello world! user agent: {userAgent}
       </p>
-      <Button />
+      <Button buttonText='yay' type='danger' size='default' />
+      <AntButton>Hoge</AntButton>
     </div>
   );
 }
