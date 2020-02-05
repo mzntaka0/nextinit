@@ -34,7 +34,7 @@ yarn install
 ```
 
 
-### The policy of component categorization
+### The categorization policy of the component
 * based on Atomic Design
 * based on Presentational and Container
 
@@ -48,7 +48,7 @@ yarn install
 |New Category|Atomic Design|P/C|description|
 -----|-----|-----|-----
 |\_atoms|atoms, molecules|Presentational|This represents a minimum part of component, only having local state that doesn't rely on anything. Atoms may only have `useState` not having `useReducer` to enclose states inside.|
-|objects|molecules|Presentational|This represents each "objects" concerned by the poinf of view from OOUI. Still only `useState`(?)|
+|objects|molecules|Presentational|This represents each "objects" concerned by the poinf of view from OOUI. Still only using `useState`(?)|
 |sections|organism|Presentational or Container|This represents a block of components, which could be Header, Footer, Contents, etc. This size of components are gonna be a unit of redux management. Refer here: https://medium.com/@rajaraodv/a-guide-for-building-a-react-redux-crud-app-7fe0b8943d0f#.c4yhhvk0d or here: https://www.freecodecamp.org/news/the-best-way-to-architect-your-redux-app-ad9bd16c8e2d/ Sections would have `useReducer` to manage larger states. Each sections/Contents/${content}.tsx should be constructed by combining "objects"|
 |layouts|templates|Container|This represents a layout of the page probably combinating some blocks. Layouts should be included in each \_page directory.|
 |\_pages|pages|Container|This represents a instance of each layouts, possibly fetching some data from outside(API server or local store). Each \_pages/${page}.tsx should be constructed by combining Contents(section).|
