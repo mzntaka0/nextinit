@@ -34,7 +34,7 @@ yarn install
 ```
 
 
-### The categorization policy of the component
+### The categorization policy of components
 * based on Atomic Design
 * based on Presentational and Container
 
