@@ -90,6 +90,9 @@ Write here: `components/_pages/${page}/lib/layout.tsx`
 This file is gonna be called in index file of each page and re-called in _app.tsx
 
 
+### How to write a redux code?
+Redux code is gonna basically be followed by this article. https://dev.to/davidkpiano/redux-is-half-of-a-pattern-1-2-1hd7
+
 ### TODO
 - [ ] Refactor a data fetching code based on Clean Architecture 
 - [ ] Consider that components/\_pages/${page}/lib directory is needed or not. -> extract them to each page's root directory?
