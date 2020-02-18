@@ -90,7 +90,7 @@ Write here: `components/_pages/${page}/lib/layout.tsx`
 This file is gonna be called in index file of each page and re-called in _app.tsx
 
 
-### How to write a redux code?
+### How to write a state management code?
 Redux code is gonna basically be followed by this article. https://dev.to/davidkpiano/redux-is-half-of-a-pattern-1-2-1hd7
 Or refer here(xstate)
 https://m.youtube.com/watch?v=o84Xw8qiTCw
