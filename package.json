@@ -12,7 +12,7 @@
   "dependencies": {
     "@types/next": "^9.0.0",
     "@types/react": "^16.9.17",
-    "apollo-server-micro": "^2.9.15",
+    "apollo-server-micro": "^2.14.2",
     "babel-preset-stage-0": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "cors": "^2.8.5",
